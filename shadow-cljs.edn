@@ -1,0 +1,16 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+
+ :dependencies
+ [[reagent "0.8.1"]]
+
+ :builds
+ {:app
+  {:target :react-native
+   :init-fn test.app/init
+   :output-dir "app"
+   :devtools {:autoload true
+              :preloads [shadow.expo.keep-awake]}}}}
