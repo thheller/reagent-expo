@@ -9,6 +9,25 @@ $ shadow-cljs release app
 ;; no idea what to do for expo
 ```
 
+You can also use `expo start --web` in order to run [react native web](https://github.com/necolas/react-native-web).
+
+You'll want to disable hot reload for react native web (since shadow-cljs is a lot faster, and you'll lose all state). It's not possible to do this "properly", but neupsh@clojurians suggested the following:
+
+> you can't turn off the live reload, but you can workaround it
+
+> you can block requests to /sockjs-node/* in chrome (didn't work on firefox)
+
+1. Open Developer Tools
+2. Click the three dots
+3. More tools > Request blocking
+4. Click the `+`
+5. Enter `*/sockjs-node/*`
+6. Done!
+
+![Step 1-3](https://memset.se/9429/e0f0c065c9c0231d80681ca7da72bbcd4a67ff1e)
+
+![Step 4-6](https://memset.se/9430/4bd73bd45cda2f096a2d2106d22ba8130b0c5bd2)
+
 ## Notes
 
 The `:app` build will create an `app/index.js`. In `release` mode that is the only file needed. In dev mode the `app` directory will contain many more `.js` files.
