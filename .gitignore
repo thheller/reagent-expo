@@ -12,3 +12,4 @@ pom.xml
 .idea/
 *.iml
 app/
+test-out/

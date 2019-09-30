@@ -10,7 +10,10 @@
  :builds
  {:app
   {:target :react-native
-   :init-fn test.app/init
+   :init-fn example.app/init
    :output-dir "app"
    :devtools {:autoload true
-              :preloads [shadow.expo.keep-awake]}}}}
+              :preloads [shadow.expo.keep-awake]}}
+  :test
+  {:target    :npm-module
+   :output-dir "test-out"}}}

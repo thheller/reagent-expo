@@ -8,15 +8,30 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "expo": "^33.0.0",
-    "react": "16.8.6",
-    "react-dom": "^16.8.6",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
+    "expo": "^35.0.0",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-test-renderer": "16.9.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-35.0.0.tar.gz",
     "react-native-web": "^0.11.5"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0",
-    "shadow-cljs": "^2.8.45"
+    "expo-keep-awake": "^7.0.0",
+    "shadow-cljs": "2.8.59",
+    "jest": "^24.9.0",
+    "jest-expo": "^35.0.0"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/.shadow-cljs/"
+    ],
+    "testMatch": [
+      "**/test-out/**/*_test.js"
+    ],
+    "snapshotResolver": "<rootDir>/customSnapshotResolver.js"
   },
   "private": true
 }

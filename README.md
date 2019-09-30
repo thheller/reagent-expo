@@ -7,6 +7,11 @@ $ yarn start
 ;; production build
 $ shadow-cljs release app
 ;; no idea what to do for expo
+
+;; testing with jest
+$ shadow-cljs watch test
+;; on another terminal
+$ yarn jest
 ```
 
 You can also use `expo start --web` in order to run [react native web](https://github.com/necolas/react-native-web).

@@ -1,4 +1,4 @@
-(ns test.app
+(ns example.app
   (:require
     ["expo" :as ex]
     ["react-native" :as rn]
