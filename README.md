@@ -28,6 +28,13 @@ You'll want to disable hot reload for react native web (since shadow-cljs is a l
 
 ![Step 4-6](https://memset.se/9430/4bd73bd45cda2f096a2d2106d22ba8130b0c5bd2)
 
+
+## Tests
+
+You can find an example of using `jest` to test `react-native` apps here.
+
+- https://github.com/mynomoto/reagent-expo/tree/jest-test
+
 ## Notes
 
 The `:app` build will create an `app/index.js`. In `release` mode that is the only file needed. In dev mode the `app` directory will contain many more `.js` files.
