@@ -1,13 +1,21 @@
+## Development
 ```
 $ yarn
 $ shadow-cljs watch app
 ;; wait for first compile to finish or expo gets confused
-$ yarn start
-
-;; production build
-$ shadow-cljs release app
-;; no idea what to do for expo
+$ expo start
 ```
+
+## Building with EAS Build
+
+There is a post-install hook in `package.json` that will automatically call `shadow-cljs release app` when building with EAS Build. Check the [EAS Build documentation](https://docs.expo.dev/build/introduction/) for the possibilities.
+
+e.g.:
+```
+$ eas build --platform=all --profile=production --auto-submit
+```
+
+## Web
 
 You can also use `expo start --web` in order to run [react native web](https://github.com/necolas/react-native-web).
 
