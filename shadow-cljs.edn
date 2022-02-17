@@ -5,7 +5,7 @@
   "src/test"]
 
  :dependencies
- [[reagent "0.8.1"]]
+ [[reagent "1.1.0"]]
 
  :builds
  {:app
