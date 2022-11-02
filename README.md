@@ -3,7 +3,7 @@
 $ yarn
 $ shadow-cljs watch app
 ;; wait for first compile to finish or expo gets confused
-$ expo start
+$ npx expo start
 ```
 
 ## Building with EAS Build
