@@ -10,6 +10,7 @@ npm-debug.*
 out/
 .shadow-cljs/
 .nrepl-port
+.nrepl.edn
 pom.xml
 .idea/
 *.iml
