@@ -7,7 +7,7 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eas-build-post-install": "npx shadow-cljs release app"
+    "eas-build-post-install": "./build-cljs.sh"
   },
   "dependencies": {
     "expo": "^47.0.0",
