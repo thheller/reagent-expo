@@ -8,7 +8,9 @@ $ npx expo start
 
 ## Building with EAS Build
 
-There is a post-install hook in `package.json` that will automatically call `shadow-cljs release app` when building with EAS Build. Check the [EAS Build documentation](https://docs.expo.dev/build/introduction/) for the possibilities.
+There is a post-install hook in `package.json` that will automatically call `shadow-cljs release app` when building with EAS Build. When building an iOS app it also installs Java which is needed by `shadow-cljs`.
+
+Check the [EAS Build documentation](https://docs.expo.dev/build/introduction/) for the possibilities.
 
 e.g.:
 ```
@@ -31,7 +33,7 @@ The `:app` build will create an `app/index.js`. In `release` mode that is the on
 
 `:init-fn` is called after all files are loaded and in the case of `expo` must render something synchronously as it will otherwise complain about a missing root component. The `shadow.expo/render-root` takes care of registration and setup.
 
-You should disable Fast Refresh in the Expo Go app and let `shadow-cljs` handle that instead as they will otherwise interfere with each other.
+You should disable Fast Refresh in the Expo Go app or development build and let `shadow-cljs` handle that instead as they will otherwise interfere with each other.
 
 Source maps don't seem to work properly. `metro` propably doesn't read input source maps when converting sources as things are correctly mapped to the source .js files but not their sources.
 
