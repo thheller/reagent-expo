@@ -1,13 +1,16 @@
 node_modules/**/*
 .expo/*
+dist/
 npm-debug.*
 *.jks
+*.p8
 *.p12
 *.key
 *.mobileprovision
 out/
 .shadow-cljs/
 .nrepl-port
+.nrepl.edn
 pom.xml
 .idea/
 *.iml

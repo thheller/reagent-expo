@@ -7,21 +7,21 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject",
-    "eas-build-post-install": "npx shadow-cljs release app"
+    "eas-build-post-install": "./build-cljs.sh"
   },
   "dependencies": {
-    "expo": "~44.0.0",
-    "expo-status-bar": "~1.2.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-native": "0.64.3",
-    "react-native-web": "0.17.1"
+    "expo": "^47.0.0",
+    "expo-dev-client": "~2.0.1",
+    "expo-status-bar": "~1.4.2",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-native": "0.70.5",
+    "react-native-web": "~0.18.7"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9",
-    "@expo/webpack-config": "^0.16.18",
-    "shadow-cljs": "^2.17.2"
+    "@babel/core": "^7.19.3",
+    "@expo/webpack-config": "^0.17.2",
+    "shadow-cljs": "^2.20.20"
   },
   "private": true
 }
