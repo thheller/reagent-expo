@@ -17,6 +17,11 @@ e.g.:
 $ eas build --platform=all --profile=production --auto-submit
 ```
 
+To build locally use:
+```
+eas build --local
+```
+
 ## Web
 
 You can also use `expo start --web` in order to run [react native web](https://github.com/necolas/react-native-web).
