@@ -2,6 +2,8 @@
 ```
 $ yarn
 $ shadow-cljs watch app
+;; Before running the next command, need to have the EAS build installed (check the next section)
+
 ;; wait for first compile to finish or expo gets confused
 $ npx expo start
 ```
@@ -15,6 +17,15 @@ Check the [EAS Build documentation](https://docs.expo.dev/build/introduction/) f
 e.g.:
 ```
 $ eas build --platform=all --profile=production --auto-submit
+```
+
+To build locally use:
+```bash
+# To build
+eas build --local
+
+# To install on the device
+eas build:run -p android
 ```
 
 ## Web
